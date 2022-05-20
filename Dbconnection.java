@@ -1,4 +1,5 @@
-package net.codejava;
+package railways;
+
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -13,7 +14,7 @@ public class Dbconnection{
 	Connection connection=null;
 	try {
 		Class.forName("com.mysql.cj.jdbc.Driver");
-		connection=DriverManager.getConnection("jdbc:mysql://localhost:3306/namdb", "root", "ashritha");
+		connection=DriverManager.getConnection("jdbc:mysql://localhost:3306/railway", "root", "ashritha");
 	}
 	catch(Exception e) {
 		System.out.println(e);
@@ -21,9 +22,6 @@ public class Dbconnection{
 	return connection;
 }
 }
-
-
-
 
 
 
